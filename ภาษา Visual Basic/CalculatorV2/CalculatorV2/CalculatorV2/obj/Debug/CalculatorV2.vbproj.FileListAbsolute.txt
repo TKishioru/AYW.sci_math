@@ -1,0 +1,12 @@
+D:\CalculatorV2\CalculatorV2\obj\Debug\CalculatorV2.vbprojAssemblyReference.cache
+D:\CalculatorV2\CalculatorV2\obj\Debug\CalculatorV2.Form1.resources
+D:\CalculatorV2\CalculatorV2\obj\Debug\CalculatorV2.Resources.resources
+D:\CalculatorV2\CalculatorV2\obj\Debug\CalculatorV2.vbproj.GenerateResource.cache
+D:\CalculatorV2\CalculatorV2\obj\Debug\CalculatorV2.vbproj.CoreCompileInputs.cache
+D:\CalculatorV2\CalculatorV2\bin\Debug\CalculatorV2.exe.config
+D:\CalculatorV2\CalculatorV2\bin\Debug\CalculatorV2.exe
+D:\CalculatorV2\CalculatorV2\bin\Debug\CalculatorV2.pdb
+D:\CalculatorV2\CalculatorV2\bin\Debug\CalculatorV2.xml
+D:\CalculatorV2\CalculatorV2\obj\Debug\CalculatorV2.exe
+D:\CalculatorV2\CalculatorV2\obj\Debug\CalculatorV2.xml
+D:\CalculatorV2\CalculatorV2\obj\Debug\CalculatorV2.pdb

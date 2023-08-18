@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="WiNDOWS7 64"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2561-09-17 09:10:11 PM"/>
+        <attribute name="created" value="V2lORE9XUzcgNjQ7QkNPUzsyNTYxLTA5LTE3OzA3OjQyOjE3IFBNOzIzNzE="/>
+        <attribute name="edited" value="V2lORE9XUzcgNjQ7QkNPUzsyNTYxLTA5LTE3OzA5OjEwOjExIFBNOzI7MjQ3MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="GPAX, Onet, Gat, Patsci, Pateng, admission, uni" type="Real" array="False" size=""/>
+            <output expression="&quot;Welcome to TCAS Round 3 :: Faculty of Engineering&quot;" newline="True"/>
+            <output expression="&quot;The lowest score of the university you want to enter. : &quot;" newline="True"/>
+            <input variable="uni"/>
+            <output expression="&quot;Your GPAX (6 Term) : &quot;" newline="True"/>
+            <input variable="GPAX"/>
+            <output expression="&quot;Score O-net (All Subject) : &quot;" newline="True"/>
+            <input variable="Onet"/>
+            <output expression="&quot;Score Gat (300) : &quot;" newline="True"/>
+            <input variable="Gat"/>
+            <output expression="&quot;Score Pat 2 (300) : &quot;" newline="True"/>
+            <input variable="Patsci"/>
+            <output expression="&quot;Score Pat 3 (300) : &quot;" newline="True"/>
+            <input variable="Pateng"/>
+            <assign variable="admission" expression="(GPAX*1500) + (Onet*18) + (Gat*15) + (Patsci*15) + (Pateng*20)"/>
+            <if expression="admission &gt;= uni">
+                <then>
+                    <output expression="&quot;Congratulations, you can join this university.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;SHOW YOUR SCORE : &quot; &amp; admission" newline="True"/>
+                    <assign variable="admission" expression="uni - admission"/>
+                    <output expression="admission &amp; &quot; more points&quot;" newline="True"/>
+                    <output expression="&quot;Sorry you have to try harder than this.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

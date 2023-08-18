@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="WiNDOWS7 64"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2561-12-10 10:55:19 AM"/>
+        <attribute name="created" value="V2lORE9XUzcgNjQ7QkNPUzsyNTYxLTEyLTEwOzEwOjQyOjM2IEFNOzIzMzg="/>
+        <attribute name="edited" value="V2lORE9XUzcgNjQ7QkNPUzsyNTYxLTEyLTEwOzEwOjU1OjE5IEFNOzE7MjQ1MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="principal, DC, money, year, month, ny, rm" type="Integer" array="False" size=""/>
+            <declare name="interest, total" type="Real" array="False" size=""/>
+            <declare name="ans" type="String" array="False" size=""/>
+            <do expression="(ans == &quot;Y&quot;)||(ans == &quot;y&quot;)">
+                <comment text="system (&quot;cls&quot;);"/>
+                <output expression="&quot;Welcome to interest calculator. [Fixed Deposits]&quot;" newline="True"/>
+                <output expression="&quot;Enter your principal : &quot;" newline="True"/>
+                <input variable="principal"/>
+                <output expression="&quot;Enter your year number : &quot;" newline="True"/>
+                <input variable="year"/>
+                <output expression="&quot;Fill interest per year : &quot;" newline="True"/>
+                <input variable="interest"/>
+                <assign variable="ny" expression="1"/>
+                <assign variable="DC" expression="principal"/>
+                <assign variable="money" expression="principal"/>
+                <while expression="ny &lt;= year">
+                    <for variable="rm" start="1" end="12" direction="inc" step="1">
+                        <assign variable="money" expression="money + DC"/>
+                    </for>
+                    <assign variable="total" expression="principal * (interest/100)"/>
+                    <assign variable="ny" expression="ny + 1"/>
+                </while>
+                <output expression="&quot;principal : &quot; &amp; principal" newline="True"/>
+                <output expression="&quot;All Money : &quot; &amp; money-principal" newline="True"/>
+                <output expression="&quot;interest &quot; &amp; interest &amp; &quot;in &quot; &amp; year &amp; &quot;year : &quot; &amp; total*year" newline="True"/>
+                <output expression="&quot;Again (Y/N)&quot;" newline="True"/>
+                <input variable="ans"/>
+            </do>
+            <output expression="&quot;Thank you&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
